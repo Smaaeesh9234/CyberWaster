@@ -5,8 +5,7 @@ Files used for the CyberWaster Project
 Place any notes that you have about the cyberwaster here. This should include any hardware and complications
 
 
-
-Lidar System:
+## Lidar System:
 
 
 $8.00 [Nema 17 Bipolar Stepper Motor](https://www.omc-stepperonline.com/nema-17-bipolar-1-8deg-16ncm-22-6oz-in-1a-3-7v-42x42x20mm-4-wires-17hs08-1004s)
