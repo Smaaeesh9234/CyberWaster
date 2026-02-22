@@ -1,0 +1,26 @@
+~~~~~~~~Arduino -> A4988 Driver~~~~~~~~~
+Enables control of Motor Driver
+{Arduino PIN -> Driver}
+3 -> STEP
+4 -> DIR
+5 -> ENABLE
+Power (5V) -> VDD
+Ground -> GND
+External power (12 V ideally. needs at least 1 amp) -> 100uF capacitor (for voltage spike protection, might not be needed since its battery powered) -> VMOT
+External Power GND -> GND (next to VMOT)
+
+~~~~~~~~Nema 17 step Motor -> A4988 Driver~~~~~~~~~
+Controls Power Coils A and B
+{Motor -> Driver}
+A+ -> 2B
+A- -> 2A
+B+ -> 1A
+B- -> 1B
+
+~~~~~~~~ TF Luna Lidar -> Arduino ~~~~~~~~~
+Receives and sends output to LiDAR sensor
+{LiDAR -> Arduino}
+TX(Transmit) ->  Pin 19 (RX1)
+RX(Recieve) -> 18 (TX1)
+GND -> GND
+5V -> 5V
