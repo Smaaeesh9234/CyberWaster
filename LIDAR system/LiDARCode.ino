@@ -23,7 +23,6 @@ bool sweepForward = True;
 float degPerStep = SWEEP_DEGREES/STEPS_PER_SWEEP
 
 void setup() {
-
   //Output Data to PC (testing):
   Serial.begin(115200);
   Serial.println("=== LiDAR Sweep Scanner Starting ===");
@@ -48,8 +47,28 @@ void loop(){
   //read distance from the TF luna LiDAR
   int distance = readTFLuna();
 
+  //variable to contain current angle
+  float angle = -90.0 + (currentStep * degPerStep);
 
+  // [Insert data output here]
   
+  //Move one step
+  stepMotor();
+
+  // Update sweep step and direction if needed.
+  if (sweepForward) {
+    currentStep++;
+    if (currentStep >= STEPS_PER_SWEEP) {
+      sweepForward = false;
+      setDirection(false);        // Reverse direction
+    }
+  } else {
+    currentStep--;
+    if (currentStep <= 0) {
+      sweepForward = true;
+      setDirection(true);         // Forward direction
+    }
+  }
 }
 
 // forward = true -> sweep left to right, forward = false -> right to left
