@@ -1,0 +1,494 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+
+  <world name="CyberWaster_Sim1">
+
+    <!-----Physics----->
+    <plugin filename="libignition-gazebo-physics-system.so"
+            name="ignition::gazebo::systems::Physics"/>
+
+    <plugin filename="libignition-gazebo-scene-broadcaster-system.so"
+            name="ignition::gazebo::systems::SceneBroadcaster"/>
+
+    <!-----Sun Light----->
+    <light type="directional" name="sun">
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>1 1 1 1</diffuse>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <!-----Ground Plane----->
+    <model name="ground_floor">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <!-----9 x 9 floor----->
+              <size>9 9</size>
+            </plane>
+          </geometry>
+        </collision>
+
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <!-----9 x 9 floor----->
+              <size>9 9</size>
+            </plane>
+          </geometry>
+
+          <!-----Color of floor----->
+          <material>
+            <ambient>0.75 0.75 0.75 1</ambient>
+            <diffuse>0.75 0.75 0.75 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+   <!---------------Garage Floor Area--------------->
+   <model name="garage_floor">
+     <static>true</static>
+
+     <!-----garage area within garage walls----->
+     <pose>-3.3 0 0.005 0 0 0</pose>
+
+     <link name="link">
+
+       <collision name="collision">
+         <geometry>
+           <!-----Thin so it doesn't interrupt movement in future----->
+           <box>
+             <size>2.6 9.0 0.01</size>
+           </box>
+         </geometry>
+       </collision>
+
+       <visual name="visual">
+         <geometry>
+           <box>
+             <size>2.6 9.0 0.01</size>
+           </box>
+         </geometry>
+
+         <!-----Dark Gray Garage Floor----->
+         <material>
+           <ambient>0.25 0.25 0.25 1</ambient>
+           <diffuse>0.25 0.25 0.25 1</diffuse>
+           <specular>0.03 0.03 0.03 1</specular>
+         </material>
+       </visual>
+     </link>
+   </model>
+
+
+
+    <!----------Walls around 9x9 area---------->
+
+    <model name="map_walls">
+      <static>true</static>
+
+      <!-----East Wall----->
+      <link name="east_wall">
+        <pose>0 4.55 0.5 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>9 0.1 1.0</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>9 0.1 1.0</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.78 0.72 0.62 1</ambient>
+            <diffuse>0.78 0.72 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+      </link>
+
+      <!-----West Wall----->
+      <link name="west_wall">
+        <pose>0 -4.55 0.5 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>9 0.1 1.0</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>9 0.1 1.0</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.78 0.72 0.62 1</ambient>
+            <diffuse>0.78 0.72 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+      </link>
+ 
+      <!-----North Wall----->
+      <link name="north_wall">
+        <pose>4.55 0 0.5 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 9 1.0</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 9 1.0</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.78 0.72 0.62 1</ambient>
+            <diffuse>0.78 0.72 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+      </link>
+
+      <!-----South Wall----->
+      <link name="south_wall">
+        <pose>-4.55 0 0.5 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 9 1.0</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 9 1.0</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.78 0.72 0.62 1</ambient>
+            <diffuse>0.78 0.72 0.62 1</diffuse>
+            <specular>0.05 0.05 0.05 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+   <!---------------Garage Entrance--------------->
+   <model name="garage_gate">
+     <static>true</static>
+
+     <!-----Right Gate Wall----->
+     <link name="right_gate">
+       <pose>-2.0 -3.0 0.5 0 0 0</pose>
+       <collision name="collision">
+         <geometry>
+           <box>
+             <size>0.1 3.0 1.0</size>
+           </box>
+         </geometry>
+       </collision>
+       <visual name="visual">
+         <geometry>
+           <box>
+             <size>0.1 3.0 1.0</size>
+           </box>
+         </geometry>
+         <material>
+           <ambient>0.78 0.72 0.62 1</ambient>
+           <diffuse>0.78 0.72 0.62 1</diffuse>
+           <specular>0.05 0.05 0.05 1</specular>
+         </material>
+       </visual>
+     </link>
+
+     <!-----Left Gate Wall----->
+     <link name="left_gate">
+       <pose>-2.0 3.0 0.5 0 0 0</pose>
+       <collision name="collision">
+         <geometry>
+           <box>
+             <size>0.1 3.0 1.0</size>
+           </box>
+         </geometry>
+       </collision>
+       <visual name="visual">
+         <geometry>
+           <box>
+             <size>0.1 3.0 1.0</size>
+           </box>
+         </geometry>
+         <material>
+           <ambient>0.78 0.72 0.62 1</ambient>
+           <diffuse>0.78 0.72 0.62 1</diffuse>
+           <specular>0.05 0.05 0.05 1</specular>
+         </material>
+       </visual>
+     </link>
+   </model>
+
+
+    <!----------Map Obstacles---------->
+
+    <model name="map_obstacles">
+
+      <!-----First Box from Fuel Website----->
+      <include>
+        <uri>https://fuel.gazebosim.org/1.0/QCforward/models/carboard box</uri>
+        <pose>-4.0 3.5 0.20 0 0 0</pose>
+        <name>box1</name>
+      </include>
+
+
+      <!-----Second Box from Fuel Website----->
+      <include>
+        <uri>https://fuel.gazebosim.org/1.0/QCforward/models/carboard box</uri>
+        <pose>-4.0 4.2 0.20 0 0 0</pose>
+        <name>box2</name>
+      </include>
+
+
+      <!-----Cabinet from Fuel Website----->
+      <include>
+        <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/MetalCabinet</uri>
+        <pose>-2.5 4.2 0.05 0 0 0</pose>
+        <name>cabinet</name>
+      </include>
+
+
+      <!-----First Shelf from Fuel Website----->
+      <include>
+        <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/SquareShelf</uri>
+        <pose>-2.4 -4.0 0.05 0 0 -1.5708</pose>
+        <name>shelf1</name>
+      </include>
+
+
+      <!-----Second Shelf from Fuel Website----->
+      <include>
+        <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/SquareShelf</uri>
+        <pose>-2.4 -3.2 0.05 0 0 -1.5708</pose>
+        <name>shelf2</name>
+      </include>
+
+
+      <!-----Mailbox from Fuel Website----->
+      <include>
+        <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Mailbox</uri>
+        <pose>3.8 3.8 0.05 0 0 -1.5708</pose>
+        <name>mailbox</name>
+      </include>
+
+
+      <!-----First Car from Fuel Website----->
+      <include>
+        <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Hatchback</uri>
+        <pose>1.2 1.3 0.05 0 0 0</pose>
+        <name>car1</name>
+      </include>
+
+
+      <!-----Second Car from Fuel Website----->
+      <include>
+        <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Hatchback</uri>
+        <pose>1.2 -1.2 0.05 0 0 0</pose>
+        <name>car2</name>
+      </include>
+
+   </model>
+
+/*
+
+    <!---------------Robot Segment--------------->
+
+    <model name="CyberWaster" canonical_link="chassis">
+
+      <!-----Spawn above ground to avoid clipping----->
+      <pose>-3.6 -3.6 0.15 0 0 0</pose>
+
+      <!----------Chassis---------->
+      <link name="chassis">
+
+        <!-----Chassis positioned at center/above ground----->
+        <pose>0 0 0.12 0 0 0</pose>
+
+        <inertial>
+          <mass>2.0</mass>
+          <inertia>
+            <ixx>0.02</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.02</iyy>
+            <iyz>0</iyz>
+            <izz>0.02</izz>
+          </inertia>
+        </inertial>
+
+        <!-----Chassis scaled smaller to match Fuel trash bin----->
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.7 0.45 0.20</size>
+            </box>
+          </geometry>
+
+          <!-----Color of Chassis----->
+          <material>
+            <ambient>0.5 0 0 1</ambient>
+            <diffuse>0.5 0 0 1</diffuse>
+            <specular>0.2 0.05 0.05 1</specular>
+          </material>
+        </visual>
+
+        <!-----For contact with Chassis----->
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.7 0.45 0.20</size>
+            </box>
+          </geometry>
+        </collision>
+
+      </link>
+
+      <!-----Left wheel scaled smaller----->
+      <link name="left_wheel">
+
+        <!-----x:placed near the back, y: left side, z: wheel at center height----->
+        <pose relative_to="chassis">-0.20 0.26 0.00 -1.5707 0 0</pose>
+
+        <inertial>
+          <mass>0.3</mass>
+          <inertia>
+            <ixx>0.001</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.001</iyy>
+            <iyz>0</iyz>
+            <izz>0.002</izz>
+          </inertia>
+        </inertial>
+
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <radius>0.12</radius>
+              <length>0.06</length>
+            </cylinder>
+          </geometry>
+
+          <!-----Color of left wheel----->
+          <material>
+            <ambient>0.05 0.05 0.05 1</ambient>
+            <diffuse>0.05 0.05 0.05 1</diffuse>
+            <specular>0.2 0.2 0.2 1</specular>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.12</radius>
+              <length>0.06</length>
+            </cylinder>
+          </geometry>
+        </collision>
+
+      </link>
+
+      <!-----Right wheel scaled smaller----->
+      <link name="right_wheel">
+
+        <!-----x:placed near the back, y: right side, z: wheel at center height----->
+        <pose relative_to="chassis">-0.20 -0.26 0.00 -1.5707 0 0</pose>
+
+        <inertial>
+          <mass>0.3</mass>
+          <inertia>
+            <ixx>0.001</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.001</iyy>
+            <iyz>0</iyz>
+            <izz>0.002</izz>
+          </inertia>
+        </inertial>
+
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <radius>0.12</radius>
+              <length>0.06</length>
+            </cylinder>
+          </geometry>
+
+          <!-----Color of right wheel----->
+          <material>
+            <ambient>0.05 0.05 0.05 1</ambient>
+            <diffuse>0.05 0.05 0.05 1</diffuse>
+            <specular>0.2 0.2 0.2 1</specular>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.12</radius>
+              <length>0.06</length>
+            </cylinder>
+          </geometry>
+        </collision>
+
+      </link>
+
+      <!----- Wheel joints ----->
+      <joint name="left_wheel_joint" type="revolute">
+        <parent>chassis</parent>
+        <child>left_wheel</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+        </axis>
+      </joint>
+
+      <joint name="right_wheel_joint" type="revolute">
+        <parent>chassis</parent>
+        <child>right_wheel</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+        </axis>
+      </joint>
+
+      <!-----TrashBin from Fuel Website----->
+      <include>
+        <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/TrashBin</uri>
+        <!-----Placed on top of Chassis----->
+        <pose relative_to="chassis">0 0 0.10 0 0 0</pose>
+        <name>trash_bin</name>
+      </include>
+
+      <!-----Attach the bin to Chassis----->
+      <joint name="bin_fixed_to_chassis" type="fixed">
+        <parent>chassis</parent>
+        <child>trash_bin::body</child>
+      </joint>
+
+    </model>
+
+*/
+  </world>
+</sdf>
