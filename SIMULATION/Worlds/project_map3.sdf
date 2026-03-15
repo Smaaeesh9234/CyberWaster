@@ -376,6 +376,7 @@
       </model>
 
 
+/*
     <!---------------Robot Segment--------------->
 
     <model name="CyberWaster" canonical_link="chassis">
@@ -550,5 +551,7 @@
       </joint>
 
     </model>
+
+*/
   </world>
 </sdf>
