@@ -1,0 +1,690 @@
+﻿STEP to UG
+! INFO-     NX STEP AP214 - V2506.3001
+! INFO-      
+! INFO-     Start of Translation: 4-MAR-2026  11:20:08 PM
+! INFO-      
+! STATUS-   Converting Part: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Full Assembly.step
+! SUMMARY-   
+! SUMMARY-    STEP Header Information
+! SUMMARY-   
+! SUMMARY-  Description      STEP AP242 Edition 2
+! SUMMARY-  Description      STEP AP242 Edition 2'CAx-IF Rec.Pracs.---Representation and Presentation of Product Manufacturing Information (PMI)---4.0---2014-10-13
+! SUMMARY-  Description      STEP AP242 Edition 2'CAx-IF Rec.Pracs.---Representation and Presentation of Product Manufacturing Information (PMI)---4.0---2014-10-13'CAx-IF Rec.Pracs.---3D Tessellated Geometry---0.4---2014-09-14
+! SUMMARY-  Description      STEP AP242 Edition 2'CAx-IF Rec.Pracs.---Representation and Presentation of Product Manufacturing Information (PMI)---4.0---2014-10-13'CAx-IF Rec.Pracs.---3D Tessellated Geometry---0.4---2014-09-14'2;1
+! SUMMARY-  Description      STEP AP242 Edition 2'CAx-IF Rec.Pracs.---Representation and Presentation of Product Manufacturing Information (PMI)---4.0---2014-10-13'CAx-IF Rec.Pracs.---3D Tessellated Geometry---0.4---2014-09-14'2;1'CAx-IF Rec.Pracs.---User Defined Attributes---1.5---2016-08-15
+! SUMMARY-  Imp_Level        2;1
+! SUMMARY-  File_Name        /vol/tmp/translate-7019273436184203641/Full Assembly.step
+! SUMMARY-  Date             2026-03-04T22:30:20
+! SUMMARY-  Author           Unknown
+! SUMMARY-  Organization     Unknown
+! SUMMARY-  Pre_Version      ST-DEVELOPER v20
+! SUMMARY-  Orig_System      ONSHAPE BY PTC INC, 1.211
+! SUMMARY-  Authorization      
+! SUMMARY-  Schema_ID        ap242_managed_model_based_3d_engineering_mim_lf
+! SUMMARY-   
+! SUMMARY-    Summary of STEP Entities
+! SUMMARY-   
+! SUMMARY-  Entity Type                                                   Count
+! SUMMARY-  -----------                                                   ------
+! SUMMARY-  advanced_face ..............................................:    439
+! SUMMARY-  application_context ........................................:      1
+! SUMMARY-  axis2_placement_3d .........................................:    529
+! SUMMARY-  b_spline_curve_with_knots ..................................:    168
+! SUMMARY-  b_spline_surface_with_knots ................................:     80
+! SUMMARY-  b_spline_surface_with_knots_and_rational_b_spline_surface ..:      4
+! SUMMARY-  cartesian_point ............................................:   3275
+! SUMMARY-  circle .....................................................:    106
+! SUMMARY-  closed_shell ...............................................:      5
+! SUMMARY-  context_dependent_shape_representation .....................:     48
+! SUMMARY-  cylindrical_surface ........................................:     56
+! SUMMARY-  degenerate_toroidal_surface ................................:      8
+! SUMMARY-  direction ..................................................:   1860
+! SUMMARY-  edge_curve .................................................:   1095
+! SUMMARY-  edge_loop ..................................................:    479
+! SUMMARY-  ellipse ....................................................:     19
+! SUMMARY-  face_bound .................................................:    479
+! SUMMARY-  geometric_representation_context_and_global_uncertainty_a ..:     49
+! SUMMARY-  item_defined_transformation ................................:     48
+! SUMMARY-  length_unit_and_si_unit ....................................:      1
+! SUMMARY-  line .......................................................:    802
+! SUMMARY-  manifold_solid_brep ........................................:      5
+! SUMMARY-  next_assembly_usage_occurrence .............................:     48
+! SUMMARY-  oriented_edge ..............................................:   2190
+! SUMMARY-  plane ......................................................:    281
+! SUMMARY-  plane_angle_unit_and_si_unit ...............................:      1
+! SUMMARY-  product ....................................................:     49
+! SUMMARY-  product_context ............................................:     49
+! SUMMARY-  product_definition .........................................:     49
+! SUMMARY-  product_definition_context .................................:     49
+! SUMMARY-  product_definition_formation_with_specified_source .........:     49
+! SUMMARY-  product_definition_shape ...................................:     97
+! SUMMARY-  product_related_product_category ...........................:     49
+! SUMMARY-  representation_relationship_with_transformation_and_shape ..:     48
+! SUMMARY-  shape_representation .......................................:     49
+! SUMMARY-  si_unit_and_solid_angle_unit ...............................:      1
+! SUMMARY-  spherical_surface ..........................................:      6
+! SUMMARY-  toroidal_surface ...........................................:      4
+! SUMMARY-  uncertainty_measure_with_unit ..............................:     49
+! SUMMARY-  vector .....................................................:    802
+! SUMMARY-  vertex_point ...............................................:    696
+! SUMMARY-                                                               -------
+! SUMMARY-  Total                                                          14122
+! STATUS-    
+! STATUS-   Converting to Output Form (Phase 2 of 3): 4-MAR-2026 11:20:09 PM
+! STATUS-    
+! WARNING-  Reference Set Name Part 1 is changed to: Part_1-c1.
+! WARNING-  Reference Set Name Part 2 is changed to: Part_2-c1.
+! WARNING-  Reference Set Name Part 1 is changed to: Part_1-c2.
+! WARNING-  Reference Set Name Part 1 is changed to: Part_1-c3.
+! WARNING-  Reference Set Name Part 1 is changed to: Part_1-c4.
+! WARNING-  Reference Set Name Part 1 is changed to: Part_1-c5.
+! WARNING-  Reference Set Name Part 1 is changed to: Part_1-c6.
+! WARNING-  Reference Set Name Part 1 is changed to: Part_1-c7.
+! WARNING-  Reference Set Name Part 1 is changed to: Part_1-c8.
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! INFO-     Scaling data from metre to millimetre may prevent import of data which is beyond millimetre NX part bounding box 
+! STATUS-    
+! STATUS-   Generating UG geometry and placing them in parts
+! STATUS-    
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:11 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 33
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:11 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 18567
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:11 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 18566
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:11 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 18565
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:11 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 18563
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Solid/Sheet .................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              1
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:11 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 18562
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Solid/Sheet .................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              1
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:12 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 18561
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Solid/Sheet .................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              1
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:12 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 18560
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:12 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 13
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:12 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 16
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:12 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 31
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:12 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 18
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:12 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 7
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:12 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 8
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:12 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 14
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:12 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 23
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:12 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 6
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:12 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 36
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:12 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 28548
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:12 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 11
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:13 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 18546
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:13 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 32
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:13 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 2
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Solid/Sheet .................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              1
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:13 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 34
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:13 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 26
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:13 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 28
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:13 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 1
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Solid/Sheet .................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              1
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:13 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 9
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:13 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 12
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:13 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 29
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:13 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 19
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:13 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 37
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:13 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 21
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:13 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 24
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:13 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 4
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:13 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 22
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:14 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 5
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:14 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 35
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:14 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 20
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:14 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 25
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:14 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 10
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:14 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 3
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:14 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 17
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:14 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 30
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:14 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 15
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:14 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Part 27
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:14 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Ardunio Mega _1_
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     3
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              3
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:14 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\LiDAR _1_
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     5
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              5
+! STATUS-   Creating the UG part (Phase 3 of 3): 4-MAR-2026  11:20:14 PM
+! INFO-     Filing Part ..: C:\Users\Brandan\Documents\School\FIU\Final Project\Model\Full Assembly_step.prt
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:    40
+! SUMMARY-                                 -----
+! SUMMARY-  Total                             40
+! INFO-      
+! INFO-     Total number of solids input for this translation       :         5
+! INFO-      
+! INFO-     Number of solids created without body validation faults :         5
+! INFO-      
+! INFO-     Number of solids created with body validation fault(s)  :         0
+! INFO-      
+! INFO-     Number of solids ending up as sheet bodies              :         0
+! INFO-      
+! INFO-     End of Translation: 4-MAR-2026  11:20:15 PM
+! INFO-      
